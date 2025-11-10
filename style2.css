@@ -1,0 +1,254 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif; /* Corrigido o erro de sintaxe */
+    
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Estilos Padrão do Header (para a página inicial) */
+header{
+    background-color: #222;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Corrigido: Tira o line-through dos links, deixa sublinhado só no hover */
+a{
+    text-decoration: none; /* Tira o risco nos links */
+    color: #fff;
+    transition: text-decoration 0.2s ease-in-out;
+}
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo do Rodapé */
+footer{
+    background-color: #222;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilo Principal (Conteúdo) */
+main{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.text p{
+    width: 75%;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.6;
+}
+footer span{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+.main-content h2{
+    margin-bottom: 2%;
+    font-size: 2.2em;
+}
+.text{
+    margin-bottom: 10%;
+}
+.projetos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* Estilo dos Cards de Projeto */
+.card{
+    width: 120px;
+    height: 120px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-right: 1.8em;
+    margin-left: 1.8em;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 1.25s ease-in-out;
+}
+.card img{
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    vertical-align: middle;
+}
+.card:hover{
+    box-shadow: 0px 0px 8px #00e0ff;
+}
+
+/* Estilos de Tipografia no Header */
+header h1{
+    font-size: 2.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+header h1, a{ 
+    color: #00e0ff;
+    transition: 0.2s ease-in-out;
+}
+/* Estilo da Imagem e Nome */
+main figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main figure img{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    margin-bottom: 20px;
+    border: 2px solid #00e0ff;
+    transition: 0.2s ease-in-out;
+}
+main figure img:hover{
+    box-shadow: 0px 0px 8px #00e0ff;
+}
+
+/* ------------------------------------------------ */
+/* 🚀 ESTILOS DO HEADER "GALERIA" (Ajustes Finais) */
+/* ------------------------------------------------ */
+
+/* OBS: Você deve usar a classe "header-galeria" NO SEU HTML quando quiser este layout. */
+
+.header-galeria {
+    background-color: #2c2c2c; 
+    color: white; 
+    padding: 20px 40px; /* Altura do Header */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+
+/* 1. Título Esquerdo ("Portfólio Digital") */
+.header-left {
+    font-size: 2.2em; /* Fonte MAIOR */
+    font-weight: 700; 
+    letter-spacing: 1px; 
+    color: white; 
+}
+
+/* 2. Título Central ("GALERIA") */
+.header-center {
+    font-size: 2.6em; /* Fonte MAIOR */
+    font-weight: 700; 
+    letter-spacing: 8px; 
+    margin-right: 15%; 
+}
+
+/* 3. Navegação à Direita (VÍDEOS, SITES...) */
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+/* Espaçamento entre os links */
+.header-right li {
+    margin-left: 30px; 
+}
+
+/* Estilo dos Links na Galeria (VÍDEOS, SITES...) */
+.header-right a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: 500; 
+    font-size: 1.1em; /* Fonte MAIOR */
+    transition: color 0.2s; 
+}
+.header-right a:hover {
+    color: #cccccc; 
+}
+/* ------------------------------------------------ */
+/* 🚀 ESTILOS DO HEADER "GALERIA" (FINAL) */
+/* ------------------------------------------------ */
+
+.header-galeria {
+    background-color: #2c2c2c; 
+    color: white; 
+    padding: 20px 40px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+
+/* 1. Título Esquerdo ("Portfólio Digital") - A mesma fonte e tamanho do exemplo */
+.header-left {
+    font-size: 1.8em; /* Tamanho do Portfólio Digital no exemplo */
+    font-weight: 700; 
+    letter-spacing: 1px; 
+    color: white; 
+}
+
+/* 2. Título Central ("GALERIA") - A mesma fonte e tamanho do exemplo */
+.header-center {
+    font-size: 2.2em; /* Tamanho da GALERIA no exemplo */
+    font-weight: 700; 
+    letter-spacing: 8px; 
+    margin-right: 15%; 
+}
+
+/* 3. Navegação à Direita (VÍDEOS, SITES, IMAGENS, FOTOS) */
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+/* Espaçamento entre os links */
+.header-right li {
+    margin-left: 30px; 
+}
+
+/* Estilo dos Links - A mesma fonte e tamanho do exemplo */
+.header-right a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: 500; 
+    font-size: 0.9em; /* Tamanho dos links no exemplo */
+    transition: color 0.2s; 
+}
+.header-right a:hover {
+    color: #cccccc; 
+}
+
+
